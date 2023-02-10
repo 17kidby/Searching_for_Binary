@@ -85,7 +85,7 @@ public class Main {
             } else {
                 System.out.println("Item " + target + " is in the data list at location " + linearPos);
             }
-        }if (searchType == 2){
+        }else if (searchType == 2){
             int binaryPos = binaryRecursion(target, data, 0, data.length);
             if (binaryPos == -1) {
                 System.out.println("Item is not in data list");
