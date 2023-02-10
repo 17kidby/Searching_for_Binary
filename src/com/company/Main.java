@@ -24,10 +24,10 @@ public class Main {
             mid = (start + end)/2;
 
             if (data[mid]<target){
-                start = mid + 1;
+                start = mid ;
             }
             if (target < data[mid]){
-                end = mid -1;
+                end = mid;
             }
 
         }
@@ -52,10 +52,10 @@ public class Main {
             return mid;
         }
         if (target>data[mid]) {
-            return binaryRecursion(target, data, mid+1, end);
+            return binaryRecursion(target, data, mid, end);
         }
         if (target<data[mid]){
-            return binaryRecursion(target, data, start, mid-1);
+            return binaryRecursion(target, data, start, mid);
         }
         if (end == mid || start == mid){
             return -1;
